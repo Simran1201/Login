@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* display: flex;
+    justify-content: center; */
+    background-color: rgb(149, 149, 149);
+}
+.form{
+    display: inline-block;
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+    color: rgb(116, 116, 116);
+    margin: 10px;
+}
+.form h1{
+    text-align: center;
+    padding: 10px;
+    color: black;
+}
+.form label{
+    display:inline-block;
+    font-size: x-large;
+}
+.form input , select{
+    padding: 7px;
+    width: 60%;
+    margin: 5px 5px;
+    border: 1px solid gray;
+    border-radius: 5px ;
+    font-size: large;
+}
+.form sup{
+    color: red;
+}
+.form .code{
+    width: 15%;
+}
+.form .gen{
+    padding: 0;
+    margin: 0%;
+    width: 8%;
+}
+.form .gender{
+    width: 45%;
+    margin-left: 25px;
+}
+.mf{
+    display: inline-block;
+}
+.form .submit{
+    width: 20%;
+    padding: 10px;
+    background-color: rgba(164, 4, 36, 0.931);
+    font-size: x-large;
+    color: white;
+    cursor: pointer;
+}
+.form .submit:hover{
+    background-color:rgba(207, 1, 43, 0.931);
+}
+.all{
+    color: rgb(235, 0, 0);
+    font-size: large;
+    padding-left: 20px;
+}
+.remove{
+    width: 10%;
+    padding: 5px;
+    background-color: rgb(1, 185, 1);
+    font-size:15px;
+    color: white;
+    cursor: pointer;
+    border: 0;
+}
+.upld{
+    padding-top: 20px;
+}
+.card{
+    background-color:rgb(240, 236, 236);
+    color: black;
+    padding: 20px;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    position: fixed;
+    top:5vh;
+    left: 37vw;
+    width: 33%;
+}
+.card h3{
+    text-align: center;
+    padding: 10px;
+    color:crimson;
+}
+.card p{
+    padding: 10px 0;
+    color: darkblue;
+}
+#ok{
+    float: right;
+    background-color: rgb(16, 192, 251);
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+    border: 1px solid rgb(1, 191, 254);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+#ok:hover{
+    background-color: rgb(80, 210, 254);
+}
+.card span{
+    color: black;
+}

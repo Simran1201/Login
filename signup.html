@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="img/apple-touch-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="stylesheet"
+    href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css/>
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="form">
+      <h1>Sign Up Form</h1>
+      <form name="myForm">
+        <label for="fname">First Name<sup>*</sup></label
+        ><br />
+        <input
+          type="text"
+          id="fname"
+          class="fname"
+          required
+          pattern="[a-zA-Z]+"
+        /><br />
+        <p id="demo" class="all"></p>
+
+        <label for="lname">Last Name<sup>*</sup></label
+        ><br />
+        <input
+          type="text"
+          id="lname"
+          class="lname"
+          required
+          pattern="[a-zA-Z]+"
+        /><br />
+        <p id="demo2" class="all"></p>
+
+        <label for="mail">Your Email<sup>*</sup></label
+        ><br />
+        <input
+          type="text"
+          id="mail"
+          class="mail"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          placeholder="ex: abc@gmail.com"
+        /><br />
+        <p id="demo3" class="all"></p>
+
+        <label for="pswd">Password<sup>*</sup></label
+        ><br />
+        <input
+          type="password"
+          id="pswd"
+          class="pswd"
+          required
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        /><br />
+        <p id="demo4" class="all"></p>
+
+        <label for="pswd2">Confirm Password<sup>*</sup></label
+        ><br />
+        <input type="password" id="pswd2" class="pswd2" required /><br />
+        <p id="demo5" class="all"></p>
+
+        <label for="cont">Contact Number<sup>*</sup></label
+        ><br />
+        <input
+          type="text"
+          id="cont"
+          class="cont"
+          required
+          pattern="[0-9]{10}"
+        /><br />
+        <p id="demo6" class="all"></p>
+
+        <label>Gender<sup>*</sup></label>
+        <input type="radio" id="male" class="male gen" name="gender" /><label
+          for="male"
+          class="mf"
+          >Male</label
+        >
+        <input
+          type="radio"
+          id="female"
+          class="female gen"
+          name="gender"
+        /><label for="female" class="mf">Female</label><br />
+
+        <label for="img" class="upld"
+          >Upload Your Profile Image<sup>*</sup></label
+        ><br />
+        <input type="file" id="img" class="img" name="img_load" /><br />
+        <img
+          id="demo8"
+          class="all"
+          height="150px"
+          width="150px"
+          style="display: none; margin: 10px;"
+        />
+        <button class="remove" id="remove" style="display: none;">
+          Remove
+        </button>
+        <p id="demo7" class="all"></p>
+        <!-- <img id="demo9" class="all"> -->
+        <input type="button" class="submit" id="submit" onclick="validate()" value="Sign Up">
+      </form>
+      <!-- <button type="submit" class="submit" id="submit" onclick="validate()" >Register</button> -->
+
+      <div class="card" id="card" style="display:none;">
+        <h3>Your Information</h3>
+        <p>Full Name: <span id="fullName"></span></p>
+        <p>Email Id: <span id="email"></span></p>
+        <p>Contact No.: <span id="phone"></span></p>
+        <p>Profile Image: <br> <img id="profile" style="margin: 5px;"></img></p>
+        <button id="ok">Ok</button>
+      </div>
+    </div>
+    <script src="signup.js"></script>
+  </body>
+</html>
